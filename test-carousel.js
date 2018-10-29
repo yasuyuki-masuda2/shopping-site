@@ -4,7 +4,7 @@ $(document).ready(function(){
             loop: true,
             nav: false,
             dots: true,
-            items: 2,
+            items: 1,
             autoplay: true
         }
     );

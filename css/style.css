@@ -65,7 +65,14 @@ header ul li {
     text-align: center;
 }
 
+.header_hunba{
+  display:none;
+}
 
+
+.header_menu{
+  display:none;
+}
 
 main {
   width:960px;/*横幅を設定*/
@@ -244,58 +251,6 @@ fotter p {
   text-align: center
 }
 
-
- @media(max-width:980px){
-   header,
-   main{width: 98%;
- }
-  
-  @media (max-width: 600px) {
-  
-  
-  header ul,
-  header.header_image{
-    width: 95%
-    
-  }
-  
-  header{
-    margin:auto;/*中央寄を設定*/
-  }
-  
-  
-  .left {
-    width: 95%;
-  }
-
-  
-  .left ul.n_item li,
-  .left ul.p_item li{
-    width:48%;
-    }
-  .left ul.guide li{
-  width:90%;
-  }
-
-  .right{
-    width: 95%;
-  }
-  
-  .about_box,
-  .shopinfo_box{
-    display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  }
-  
-  .setumei{
-    width:45%;
-   margin: 3%
-    
-  }
-  
-  }
-  
   
   .pankuzu_box{
     background-color: #e8e4da;
@@ -306,6 +261,13 @@ fotter p {
         
   }
   
+  
+  .pankuzu_box ul {
+    margin: 0;
+    padding: 0;
+}
+
+
 .pankuzu_box ul  li {
   display: inline-block;
       -webkit-box-sizing: border-box;
@@ -319,11 +281,22 @@ fotter p {
         
 }
 
-
 .products_box{
   background-color: #ffffff;
   margin-top: 5px;
+  padding-bottom:30px;
 }
+
+.fa0001{
+  color:#887f69;
+ text-align: center;
+}
+
+.pro_name{
+  display: flex;
+  justify-content: space-between;
+}
+
 
 .products_image{
   
@@ -366,10 +339,6 @@ fotter p {
 }
 
 
-.box1{
- 
-}
-
 .box1 ul{
    display: flex;
   flex-direction: row;
@@ -398,3 +367,260 @@ fotter p {
  }
  
  
+ .price_cart{
+    display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+ }
+
+.price,
+.cart{
+ width:42%; 
+ margin-top:4% ;
+}
+
+.price{
+  border-bottom:1px solid #e8e4da;
+  border-top: 1px solid #e8e4da;
+}
+
+.quant{
+ width: 99%;
+ padding:0;
+ margin-left: 0;
+ padding-bottom: 4%;
+ margin-top: 4%;
+ border-bottom: 1px solid #e8e4da;
+}
+
+.quant img{
+  text-align: left;
+}
+
+
+.sen{
+   margin-left:10%;
+   color:red;
+
+}
+.s1000{
+  font-size:3rem;
+  color:red;
+}
+
+
+ 
+ .box2 ul{
+   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  width: 98%;
+  margin:auto;
+}
+ 
+ .box2 li {
+  width: 48%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  list-style:none;
+  border: solid 1px #e8e4da;
+  text-align: center;
+  color: #887f69;
+  font-size:10%;
+  }
+
+.box2 li:nth-child(1),
+.box2 li:nth-child(3){
+   background-color: #f9f9f5;
+ }
+ 
+ 
+
+.re_pro_titile{
+  width: 20%;
+}
+
+
+.title-border {
+display: flex;
+align-items: center;
+width: 99%;
+margin-top:30px ;
+margin-bottom: 30px;
+}
+.title-border:before,
+.title-border:after {
+border-top: 1px solid #e8e4da ;
+content: "";
+flex-grow: 1;
+}
+.title-border:before {
+margin-right: 2px;
+}
+.title-border:after {
+margin-left: 2px;
+}
+ 
+ .recent_products{
+  width: 99%;
+  background-color: #ffffff;
+  
+}
+
+
+
+.recent_products ul{
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;/*横幅を超えた時に下に改行しますよ*/
+  list-style:none;
+  margin:0px;
+  padding:0px;
+}
+
+.recent_products li{
+  width:30.333%;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  text-align: center;
+  margin: 1%;
+  padding:1%;
+  
+}
+
+
+
+#list_image img{
+   width: 99%; 
+}
+
+.list_img_title_img_sp{
+  display: none;
+}
+
+
+.list_box{
+  background-color: #ffffff;
+  margin-top: 5px;
+  padding-bottom:30px;
+}
+
+
+.back_next{
+    display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.back_next p{
+
+   background-color: #887f69 ;
+      width:12rem;
+      color:#ffffff;
+      text-align: center;
+      height: 3rem;
+      padding-top: 1.1rem;
+      padding-bottom: 0.5rem;
+      font-family: 'Arial Rounded MT Bold','ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN','Arial Black',sans-serif;
+}
+
+
+
+
+ @media(max-width:980px){
+   header,
+   main{width: 98%;
+ }
+ }
+ 
+  @media (max-width: 600px) {
+  
+  
+  header ul{
+    width: 99%;
+      
+  }
+  
+ #header_image {
+    margin:auto;/*中央寄を設定*/
+ 
+  }
+  
+  
+  .header_log{
+   display: none;  
+  }
+  
+  .header_menu{
+    display:inline;
+  }
+  
+  .header_icon{
+    height:20px;  
+  }
+  
+.header_icon,
+.header_menu{
+  width:40px;
+  height:40px;
+}
+  
+  .head_ul{
+    text-align: center;
+  }
+  
+  
+  
+  .left {
+    width: 95%;
+  }
+
+  
+  .left ul.n_item li,
+  .left ul.p_item li,
+  .recent_products li{
+    width:48%;
+    }
+  .left ul.guide li{
+  width:90%;
+  }
+
+  .right{
+    width: 95%;
+  }
+  
+  .about_box,
+  .shopinfo_box{
+    display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  }
+  
+  .setumei{
+    width:45%;
+   margin: 3%
+    
+  }
+  
+  .list_img_title_img{
+    display: none;
+  }
+  
+  .item__serch{
+    display:none;
+  }
+  
+  .list_img_title_img_sp{
+    display: block;
+  }
+  
+  
+  }
+  
